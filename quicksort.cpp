@@ -15,7 +15,7 @@
      int a;
    
     cout << " ";
-    cin >> a; // Не нужно вводить, если договорились, что длина массива 20
+    cin >> 20; // Не нужно вводить, если договорились, что длина массива 20
    
     int* array = (int*)malloc(sizeof(int) * a);
      
@@ -24,7 +24,7 @@
         cout << array[i] << " ";
     }
     
-    int pivot = array [9];
+    int pivot = array [20];
     cout << endl << "oporn element " << pivot;
     
     int left;  
