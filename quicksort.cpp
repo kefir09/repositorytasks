@@ -15,7 +15,7 @@
      int a;
    
     cout << " ";
-    cin >> a;
+    cin >> a; // Не нужно вводить, если договорились, что длина массива 20
    
     int* array = (int*)malloc(sizeof(int) * a);
      
@@ -33,23 +33,24 @@
     int right1;
     
     cout << endl << " left side: ";
-    for (int i = 0; i < a; i++) {
+    // Реализуй в одном цикле поиск элементов(подсказка: цикл while)    
+    for (int i = 0; i < a; i++) { 
 
-        if (pivot > array[i]) {       
-            left = array[i];
+        if (pivot > array[i]) {  // Неправильное условие      
+            left = array[i]; // Запоминай индекс, а не сам элемент, тебе же его потом свапать
             cout << " "<< left;
         }
     }     
     
     cout << endl << " right side: ";
     for (int i = 0; i < a; i++) {
-        if (pivot < array[i]){
+        if (pivot < array[i]){ // Неправильное условие
             right = array[i];
             cout << " "<< right;
         }
     }
     
-    int result1 = recursiyaleft (left,left1);
+    int result1 = recursiyaleft (left,left1); // В этой функции вообще не вижу смысла
     
     cout <<" "<< "xoba "<< result1;
     
